@@ -1,0 +1,50 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+	<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- <h1>navbar project</h1> -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="img/logo-ventura.png" class="nav-logo" alt="nav logo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- nav-links  -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="">home</a>
+          </li>
+          <li>
+            <a href="about.html" class="">about</a>
+          </li>
+          <li>
+            <a href="project.html" class="">project</a>
+          </li>
+          <li>
+            <a href="contact.html" class="">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+        
+      </div>
+    </nav>
+	</body>
+</html>

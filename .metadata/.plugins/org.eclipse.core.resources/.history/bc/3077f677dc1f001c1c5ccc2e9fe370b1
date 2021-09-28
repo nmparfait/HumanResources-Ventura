@@ -1,0 +1,49 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>VENTURA | User Page</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<!-- google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		<!-- css links -->
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand font logoVentura" href="http://localhost:8080">Ventura HR</a>
+    			</div>
+	  	 	<ul class="nav navbar-nav navbar-right">
+				<c:if test="${empty usuario}">
+				    <li><a href="/usuario"><span class="glyphicon glyphicon-user navSize"></span> Sign Up</a></li>
+				    <li><a href="/acesso"><span class="glyphicon glyphicon-log-in navSize"></span> Login</a></li>
+				    <li><a href="http://localhost:8080/#about"><span class="glyphicon glyphicon-flag navSize"></span> About</a></li>
+				    <li><a href="http://localhost:8080/#service"><span class="glyphicon glyphicon-retweet navSize"></span> Services</a></li>
+				    <li><a href="http://localhost:8080/#contact"><span class="glyphicon glyphicon-envelope navSize"></span> Contact</a></li>
+			    </c:if>
+			    <c:if test="${not empty usuario}">
+			    	<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout, ${usuario.email}</a></li>
+			    </c:if>
+			 </ul>
+		</nav>
+	
+		<div class="container">
+		    <div class="page-header">
+		    	<h1>Ventura</h1>
+		        <p>Bem-vindo ${usuario.nomeCompleto}</p>
+		        <p>Paradis Parfait</p>
+		    </div>
+		</div>
+		
+		<c:import url="/WEB-INF/jsp/app/footer.jsp"/>
+	</body>
+</html>

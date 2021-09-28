@@ -1,0 +1,134 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <title>NavBar</title>
+	    <!-- font awesome -->
+	    <link
+	      rel="stylesheet"
+	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+	    />
+	    <!-- style -->
+	    <link rel="stylesheet" href="css/styles.css" />
+  	</head>
+  	
+  	 <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/logo-1.png" class="nav-logo" alt="nav logo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- nav-links  -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" class="">home</a>
+          </li>
+          <li>
+            <a href="about.html" class="">about</a>
+          </li>
+          <li>
+            <a href="project.html" class="">project</a>
+          </li>
+          <li>
+            <a href="contact.html" class="">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links  -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="">home</a>
+          </li>
+          <li>
+            <a href="about.html" class="">about</a>
+          </li>
+          <li>
+            <a href="project.html" class="">project</a>
+          </li>
+          <li>
+            <a href="contact.html" class="">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://linkedin.com" class="social-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" class="social-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/nmparfait" class="social-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://google.com" class="social-icon"
+              ><i class="fab fa-google"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm parfait</h1>
+          <h4>freelance & mobile UI/UX Designer & Developer</h4>
+          <a href="contact.html" class="btn hero-btn">hire me</a>
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <li>
+              <a href="https://linkedin.com" class="social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" class="social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/nmparfait" class="social-icon"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://google.com" class="social-icon"
+                ><i class="fab fa-google"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+        <article class="hero-img">
+          <img src="./images/hero-img.jpg" alt="nmp photo" class="hero-photo" />
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    </body>
+   </html>

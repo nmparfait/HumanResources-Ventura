@@ -1,0 +1,5 @@
+.font {
+	font-family: 'Dancing Script', cursive;
+	background-color: #ffb703;
+	
+}

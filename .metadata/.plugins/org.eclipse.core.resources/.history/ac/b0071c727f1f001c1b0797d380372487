@@ -1,0 +1,7 @@
+.font {
+	font-family: 'Dancing Script', cursive;
+	width: 150px;
+	height: 150px;
+	color: #ffb703;
+	
+}

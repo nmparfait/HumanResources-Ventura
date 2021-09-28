@@ -1,0 +1,173 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>VENTURA | Index</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>	
+		<div class="header">
+			<c:import url="/WEB-INF/jsp/app/menu.jsp"/>
+	    </div>
+		<!-- connect people -->
+		<section class="connect">
+	      <video controls autoplay muted loop class="video-container" poster="img/project-1.jpeg">
+	      	<source src="videos/connect.mp4" type="video/mp4" />
+	      		sorry, your browser doesn't support embedded videos.
+	      </video>
+	      <div class="video-banner">
+	      	<!-- section title  -->
+	        <div class="section-title">
+	          <h2>let's get in touch</h2>
+	          <div class="underline"></div>
+	        </div>
+	        <!--end of section title  -->
+	        <p class="video-text">
+	          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos
+	          dolorum odit necessitatibus hic omnis ut, nobis consectetur sunt
+	          voluptatibus ea quas in totam eligendi. Unde cumque possimus
+	          laudantium cum expedita asperiores, quas deleniti quod dolorum
+	          repudiandae magnam laboriosam? Voluptatum.
+	        </p>
+	        <a href="contact.html" class="btn"> contact me </a>
+	      </div>
+    	</section>
+		   <!-- services -->
+		   <!-- services -->
+		    <section class="section bg-grey">
+		      <!-- section title  -->
+		      <div class="section-title">
+		        <h2>services</h2>
+		        <div class="underline"></div>
+		      </div>
+		      <!--end of section title  -->
+		      <div class="services-center section-center">
+		        <!-- single service -->
+		        <article class="service">
+		          <i class="fas fa-code service-icon"></i>
+		          <h4>web development</h4>
+		          <div class="underline"></div>
+		          <p>
+		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
+		            temporibus alias possimus suscipit deserunt repudiandae vitae
+		            perspiciatis, molestias architecto error!
+		          </p>
+		        </article>
+		        <!-- end of single service -->
+		
+		        <!-- single service -->
+		        <article class="service">
+		          <i class="fab fa-sketch service-icon"></i>
+		          <h4>web design</h4>
+		          <div class="underline"></div>
+		          <p>
+		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
+		            temporibus alias possimus suscipit deserunt repudiandae vitae
+		            perspiciatis, molestias architecto error!
+		          </p>
+		        </article>
+		        <!-- end of single service -->
+		
+		        <!-- single service -->
+		        <article class="service">
+		          <i class="fab fa-android service-icon"></i>
+		          <h4>app design</h4>
+		          <div class="underline"></div>
+		          <p>
+		            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
+		            temporibus alias possimus suscipit deserunt repudiandae vitae
+		            perspiciatis, molestias architecto error!
+		          </p>
+		        </article>
+		        <!-- end of single service -->
+		      </div>
+		    </section>
+		    <!-- end of services -->
+		    <!-- projects -->
+		    <section class="section projects">
+		      <!-- section title  -->
+		      <div class="section-title">
+		        <h2>projects</h2>
+		        <div class="underline"></div>
+		        <p class="project-text">
+		          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error quas
+		          dignissimos dolor iure sit, quam pariatur molestias. Aliquid
+		          reiciendis, velit magni hic est minus magnam blanditiis dolor dolore
+		          cupiditate!
+		        </p>
+		      </div>
+		      <!--end of section title  -->
+		      <div class="section-center projects-center">
+		        <!-- single project -->
+		        <a href="projects.html" class="project-1">
+		          <article class="project">
+		            <img
+		              src="./images/project-1.jpeg"
+		              alt="project one"
+		              class="project-img"
+		            />
+		            <div class="project-info">
+		              <h4>project title</h4>
+		              <p>client name</p>
+		            </div>
+		          </article>
+		        </a>
+		        <!-- end of single project -->
+		
+		        <!-- single project -->
+		        <a href="projects.html" class="project-2">
+		          <article class="project">
+		            <img
+		              src="./images/project-2.jpeg"
+		              alt="project two"
+		              class="project-img"
+		            />
+		            <div class="project-info">
+		              <h4>project title</h4>
+		              <p>client name</p>
+		            </div>
+		          </article>
+		        </a>
+		        <!-- end of single project -->
+		
+		        <!-- single project -->
+		        <a href="projects.html" class="project-3">
+		          <article class="project">
+		            <img
+		              src="./images/project-3.jpeg"
+		              alt="project three"
+		              class="project-img"
+		            />
+		            <div class="project-info">
+		              <h4>project title</h4>
+		              <p>client name</p>
+		            </div>
+		          </article>
+		        </a>
+		        <!-- end of single project -->
+		
+		        <!-- single project -->
+		        <a href="projects.html" class="project-4">
+		          <article class="project">
+		            <img
+		              src="./images/project-4.jpeg"
+		              alt="project four"
+		              class="project-img"
+		            />
+		            <div class="project-info">
+		              <h4>project title</h4>
+		              <p>client name</p>
+		            </div>
+		          </article>
+		        </a>
+		        <!-- end of single project -->
+		      </div>
+		    </section>
+    	
+	</body>
+</html>
